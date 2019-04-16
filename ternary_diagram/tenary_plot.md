@@ -19,7 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```r
 #ternary diagram with dots
-Ksar <- read.csv("Ksar Akil/KsarAkil.csv")
+Ksar <- read.csv("ksar_akil/ksar_akil.csv")
 library(ggplot2);library(grid); library(ggtern)
 ```
 
