@@ -33,7 +33,7 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
   geom_point(size = 3) + theme_showarrows()
 ```
 
-
+This is der zeite plot 
 ```{r}
 #ternary diagram with numbers
 Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
