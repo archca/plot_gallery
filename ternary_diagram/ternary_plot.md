@@ -71,3 +71,5 @@ geom_text() + theme_showarrows()
 
 ![](ternary_plot_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
+Lets change the dataset --> data_faunal --> King.csv
+
