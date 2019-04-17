@@ -46,9 +46,8 @@ Lets change the dataset --> data_faunal --> King.csv
 
 
 ```{r}
-#ternary diagram with numbers
+#ternary diagram with numbers in colour
 King <- read.csv("data_faunal/King.csv") 
-library(ggplot2); library(grid); library(ggtern)
 ggtern(data=King,aes(C, P, SG, colour=Type, shape=Type, fill = Type)) +
 geom_point() + theme_showarrows()
 ```
