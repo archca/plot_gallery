@@ -59,7 +59,7 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
 
 ![](ternary_plot_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
-
+This is der secound plot with numbers
 
 ```r
 #ternary diagram with numbers
