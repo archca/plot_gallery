@@ -16,10 +16,10 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
+These are the r-codes
 
 ```r
-#ternary diagram with dots
-Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
+#load libraries
 library(ggplot2);library(grid); library(ggtern)
 ```
 
@@ -47,13 +47,17 @@ library(ggplot2);library(grid); library(ggtern)
 ##     theme_linedraw, theme_minimal, theme_void
 ```
 
+
+These are the r-codes
+
 ```r
+#ternary diagram with dots
+Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
 ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
   geom_point(size = 3) + theme_showarrows()
 ```
 
-![](ternary_plot_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
-
+![](ternary_plot_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 
 
@@ -65,5 +69,5 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
 geom_text() + theme_showarrows()
 ```
 
-![](ternary_plot_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](ternary_plot_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
