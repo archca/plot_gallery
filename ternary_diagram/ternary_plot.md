@@ -19,7 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```r
 #ternary diagram with dots
-Ksar <- read.csv("ksar_akil/ksar_akil.csv")
+Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
 library(ggplot2);library(grid); library(ggtern)
 ```
 
@@ -52,4 +52,18 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
   geom_point(size = 3) + theme_showarrows()
 ```
 
-![](tenary_plot_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](ternary_plot_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+
+
+
+
+```r
+#ternary diagram with numbers
+Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
+library(ggplot2);library(grid); library(ggtern)
+ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
+geom_text() + theme_showarrows()
+```
+
+![](ternary_plot_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
