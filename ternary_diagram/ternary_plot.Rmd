@@ -42,5 +42,14 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
 geom_text() + theme_showarrows()
 ```
 
-Lets change the dataset --> data_faunal --> King.csv
+Change the dataset --> data_faunal/king
+
+```{r}
+king <- read.csv("data_faunal/king.csv")
+library(ggplot2); library(grid); library(ggtern)
+ggtern(data=king,aes(C, P, SG, colour=Type, shape=Type, fill = Type)) +
+geom_point() + theme_showarrows()
+
+```
+
 

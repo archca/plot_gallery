@@ -71,5 +71,16 @@ geom_text() + theme_showarrows()
 
 ![](ternary_plot_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
-Lets change the dataset --> data_faunal --> King.csv
+Change the dataset --> data_faunal/king
+
+
+```r
+king <- read.csv("data_faunal/king.csv")
+library(ggplot2); library(grid); library(ggtern)
+ggtern(data=king,aes(C, P, SG, colour=Type, shape=Type, fill = Type)) +
+geom_point() + theme_showarrows()
+```
+
+![](ternary_plot_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+
 
