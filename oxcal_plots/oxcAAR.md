@@ -31,7 +31,7 @@ quickSetupOxcal()
 
     ## Oxcal doesn't seem to be installed. Downloading it now:
 
-    ## Oxcal download to /private/var/folders/hj/3hdpf4yj50s9ls16sv8g6kdm0000gn/T/Rtmp74JEjI successful!
+    ## Oxcal download to /private/var/folders/hj/3hdpf4yj50s9ls16sv8g6kdm0000gn/T/RtmpLnGYVH successful!
 
     ## Oxcal path set!
 
@@ -292,24 +292,23 @@ my_simulated_dates
     ## =============================
     ## 
     ## 
-    ## BP = 4728, std = 25
+    ## BP = 4693, std = 25
     ## 
     ## 
     ## unmodelled:                    posterior:
     ## 
     ## one sigma                      
-    ## 3626 BC - 3584 BC (34%)        
-    ## 3529 BC - 3512 BC (12%)        
-    ## 3421 BC - 3382 BC (22.2%)      
+    ## 3518 BC - 3496 BC (16.5%)      
+    ## 3450 BC - 3376 BC (51.7%)      
     ## 
     ## two sigma                      
-    ## 3632 BC - 3554 BC (44.6%)      
-    ## 3538 BC - 3496 BC (20.7%)      
-    ## 3434 BC - 3376 BC (30.1%)      
+    ## 3625 BC - 3596 BC (9%)         
+    ## 3524 BC - 3486 BC (22%)        
+    ## 3470 BC - 3370 BC (64.4%)      
     ## 
     ## three sigma                    
-    ## 3634 BC - 3492 BC (67%)        
-    ## 3464 BC - 3372 BC (32.7%)      
+    ## 3630 BC - 3560 BC (10.9%)      
+    ## 3534 BC - 3365 BC (88.8%)      
     ## 
     ## Calibrated with:
     ##    IntCal13 atmospheric curve (Reimer et al 2013)
@@ -351,9 +350,9 @@ str(my_sum_sim)
     ##   ..$ one_sigma  : logi NA
     ##   ..$ two_sigma  : logi NA
     ##   ..$ three_sigma: logi NA
-    ##  $ raw_probabilities      :'data.frame': 332 obs. of  2 variables:
-    ##   ..$ dates        : num [1:332] -4354 -4350 -4344 -4340 -4334 ...
-    ##   ..$ probabilities: num [1:332] 0.00 0.00 0.00 0.00 4.15e-09 ...
+    ##  $ raw_probabilities      :'data.frame': 280 obs. of  2 variables:
+    ##   ..$ dates        : num [1:280] -4254 -4250 -4244 -4240 -4234 ...
+    ##   ..$ probabilities: num [1:280] 0.00 0.00 0.00 1.34e-09 8.04e-09 ...
     ##  $ posterior_sigma_ranges :List of 3
     ##   ..$ one_sigma  : logi NA
     ##   ..$ two_sigma  : logi NA
@@ -442,6 +441,7 @@ str(my_result_data)
     ...
 
 ``` r
+plot(my_result_data)
 print(my_result_data)
 ```
 
@@ -454,6 +454,12 @@ print(my_result_data)
     ## 
     ## BP = 5000, std = 25
     ...
+
+``` r
+plot(my_result_data)
+```
+
+![](oxcAAR_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 Or you get the whole output of Oxcal as object:
 
