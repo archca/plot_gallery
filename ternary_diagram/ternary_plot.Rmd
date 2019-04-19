@@ -2,7 +2,7 @@
 title: "Tenary Plot"
 author: "Mirco Brunner"
 text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
-bibliography: library.bib
+bibliography: 
 
 output: html_document
 keep_md: true
@@ -94,4 +94,4 @@ p
 fig2 ()
 ```
 
-##References
+###References
