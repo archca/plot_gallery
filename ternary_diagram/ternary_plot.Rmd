@@ -1,9 +1,11 @@
 ---
 title: "Tenary Plot"
 author: "Mirco Brunner"
-text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
+affiliation: "Johanna Mestorf Akademie / Institut für Ur- und Frühgeschichte, Christian-Albrechts Universität zu Kiel"
+email: "mirco.brunner@iaw.unibe.ch"
+name: "Mirco Brunner"
+date: "FS 2019"
 bibliography: 
-
 output: html_document
 keep_md: true
 editor_options: 
