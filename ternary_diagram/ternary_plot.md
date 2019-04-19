@@ -1,5 +1,8 @@
 ---
 title: "Tenary Plot"
+athor: "Mirco Brunner"
+text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
+
 output:
   
   html_document:
@@ -10,14 +13,13 @@ editor_options:
 
 
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## R Ternary Plots
 
 
-For an initial illustration, data from Table 9.12 in Doran and Hodson (1975) are used (Table 11.1). The left-hand table shows the counts of cores, blanks and stone tools found in different levels at the palaeolithic site of Ksar Akil (Lebanon); the levels are numbered from earliest (25) to latest (12). The right-hand table shows the counts converted to percentage for each level and can be represented in a ternary diagram2. Read the data (i.e. the headers and what follows) into a data frame Ksar – you will need to select a subset of the columns for analysis. Either Ksar[, 1:4] or Ksar[, c(1,5:7] will do it. we’ll use the former; ggtern will transform these to the percentages needed. The ternary diagram for these data, in Figure 1a, is followed by the code used.
+All data in this file are from Baxter & Cool 2016 <http://www.barbicanra.co.uk/simple-r.html>.
+
+
+For an initial illustration, data from folder data_kasar_akil in Doran and Hodson (1975) are used. The left-hand table shows the counts of cores, blanks and stone tools found in different levels at the palaeolithic site of Ksar Akil (Lebanon); the levels are numbered from earliest (25) to latest (12). The right-hand table shows the counts converted to percentage for each level and can be represented in a ternary diagram 1b. Read the data (i.e. the headers and what follows) into a data frame Ksar – you will need to select a subset of the columns for analysis. Either Ksar[, 1:4] or Ksar[, c(1,5:7] will do it. we’ll use the former; ggtern will transform these to the percentages needed. The ternary diagram for these data, in Figure 1a, is followed by the code used.
 
 
 ```r
@@ -49,10 +51,11 @@ library(ggplot2);library(grid); library(ggtern)
 ##     theme_linedraw, theme_minimal, theme_void
 ```
 
-These are the r-codes
+Ternery diagram 1a
+
 
 ```r
-#ternary diagram with dots fig. 1a
+#ternary diagram  with dots fig. 1a
 Ksar <- read.csv("data_ksar_akil/ksar_akil.csv")
 ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
   geom_point(size = 3) + theme_showarrows()
@@ -60,7 +63,8 @@ ggtern(data=Ksar[,1:4],aes(Cores, Blanks, Tools, label=Levels)) +
 
 ![](ternary_plot_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
-This is der secound plot with numbers
+Ternary diagram 1b
+
 
 ```r
 #ternary diagram with numbers fig. 1b
@@ -107,7 +111,5 @@ fig2 ()
 ```
 
 ![](ternary_plot_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
-
-
 
 
