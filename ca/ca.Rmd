@@ -31,5 +31,4 @@ plot(ur.ca,
 ```
 
 
-
-The End!
+This is the End
