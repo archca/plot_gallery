@@ -140,7 +140,7 @@ fig4.7 <- function() {
     geom_density() +
     facet_grid(Date ~ ., scales = "free_y") + # make y axes independent for all grid elements
     theme(panel.grid.minor = element_blank()) +
-    xlab("lengths (mm)") + ggtitle("Thickness Lutzenguetle Pottery") +
+    xlab("lengths (mm)") + ggtitle("Length Roman hair pins") +
     theme(axis.text=element_text(size=12),
           axis.title=element_text(size=14)) +
     theme(plot.title = element_text(size = 16, face="bold"))
