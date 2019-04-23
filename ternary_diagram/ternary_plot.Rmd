@@ -2,8 +2,7 @@
 title: "Tenary Plot"
 author: "Mirco Brunner"
 text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
-bibliography: 
-
+bibliography: library.bib
 output: html_document
 keep_md: true
 editor_options: 
@@ -14,9 +13,16 @@ chunk_output_type: console
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri(file.path(R.home("doc"), "html", "logo.jpg")), 
+               alt = 'logo', 
+               style = 'position:absolute; top:0; right:0; padding:10px;')
+```
+
 ## R Ternary Plots
 
-All data and some Text are from Baxter & Cool 2016 <http://www.barbicanra.co.uk/simple-r.html>.
+All data and some Text are from [@baxter_basic_2016] <http://www.barbicanra.co.uk/simple-r.html>.
 
 Ternary diagrams go under a variety of names – triangular, tripolar or phase diagrams among them. They are used when p = 3 variables are available that are scaled to sum to 100% (or 1). The data may be categorical or continuous. This scaling (or compositional constraint) means the values of any two variables determine the value of the third variable. This implies that the data are exactly two-dimensional.The data can be plotted in an equilateral triangle where a point represents the relative proportions of the three variables as measured by the (perpendicular) distances to the three axes. In effect, and as previously noted, a point in a ternary diagram encapsulates the same information as a pie chart for three categories, with the considerable advantage that the distances between points are visualized. Howarth’s (1996) history of the ternary diagram traces its origins to the mid-18th century. Their use in archaeology is widespread, often occurring in the more ‘specialised’ literature. Howarth (1996: 338) notes that they are widely used ingeology, physical chemistry and metallurgy and are to be found in archaeological publications that interact with these disciplines. Recent papers in this vein that use ternary diagrams include Hughes et al. (2010) study of flint compositions, Panich (2016) of obsidian, and Chirikure et al. (2010) of slags. For data sets with more than 3 variables composite variables (i.e. linear combinations of those available) are sometimes defined to enable their representation in a ternary diagram (e.g., Hein et al. 2007: 149; Plaza and Martinón-Torres 2015: 93). Another use is in phase diagrams where a plot is ‘zoned’ in some way to identify, for example, different classes of material or manufacturing technologies corresponding to different regions of the diagram. Data are then plotted to characterize the cases beings studied (e.g., Thornton and Rehren 2009; Radivojevic et al. 2010).
 

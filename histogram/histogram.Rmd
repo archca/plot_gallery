@@ -1,0 +1,51 @@
+---
+title: "Tenary Plot"
+author: "Mirco Brunner"
+text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
+bibliography: 
+output: html_document
+keep_md: true
+editor_options: 
+chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri(file.path(R.home("doc"), "html", "logo.jpg")), 
+               alt = 'logo', 
+               style = 'position:absolute; top:0; right:0; padding:10px;')
+```
+
+## Introduction
+
+Histograms are one of the most familiar methods for presenting continuous data.
+For illustration unpublished data from Cool (1983) will be used. They are the
+lengths (mm) of 90 copper alloy hairpins from southern Britain, 55 classified as
+early and 35 as late on archaeological grounds (see Cool, 1990, for a review of the
+use of such hairpins). The data are given in Table 4.1.
+
+```{r}
+#load libraries
+library(ggplot2)
+```
+
+
+## show data table
+```{r}
+#show data
+pins <- read.csv("data_pins/pins.csv")
+print(pins)
+```
+
+## Figure 4.3a – Based on Table 4.2 (pins)
+
+```{r}
+Length <- pins$Length
+hist(Length)
+```
+
+
+
