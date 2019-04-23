@@ -31,3 +31,4 @@ ggradar(plotdata,
         group.line.width = 1.5,
         legend.text.size= 10) +
   labs(title = "Mammals, size, and sleep")
+

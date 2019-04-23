@@ -122,6 +122,37 @@ barplot(Percentage, names.arg = Period, xlab = "Period ",
         ylab = "Percentage ", cex.names = 0.7)
 ```
 
+```{r}
+ercentage <- pillar$Percentage; Period <- pillar$Period 
+Width <- pillar$Width
+barplot(Percentage/Width, space = 0, width = Width, col =  "skyblue",
+        names.arg = Period, xlab = "Period", axes = F, cex.names = 0.5) 
+```
+
+
+
+```{r}
+fig4.7 <- function() {
+  library(ggplot2); library(grid)
+  
+  p <- ggplot(data = pins, aes(x = Length)) +
+    geom_histogram(aes(y=..density..), bins = 20, fill = "light gray", colour = "red") +
+    geom_density() +
+    facet_grid(Date ~ ., scales = "free_y") + # make y axes independent for all grid elements
+    theme(panel.grid.minor = element_blank()) +
+    xlab("lengths (mm)") + ggtitle("Thickness Lutzenguetle Pottery") +
+    theme(axis.text=element_text(size=12),
+          axis.title=element_text(size=14)) +
+    theme(plot.title = element_text(size = 16, face="bold"))
+  
+  p
+}
+
+fig4.7()
+
+```
+
+
 
 # References
 

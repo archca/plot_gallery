@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.17)  22 APR 2019 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.17)  23 APR 2019 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1780,38 +1780,38 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.59998pt on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 87.
+(Font)              scaled to size 9.49997pt on input line 88.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 87.
+(Font)              scaled to size 9.49997pt on input line 88.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 98.
+(hyperref)                be the same. Added a new anchor on input line 100.
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 116--121
+Underfull \hbox (badness 1975) in paragraph at lines 120--125
 [] []\T1/phv/b/n/9 For-mat.[] \T1/lmr/m/n/9 (+20) Many au-thors find it use-ful
  to or-ga-nize their
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 143.
+Package mdframed Info: mdframed works in twoside mode on input line 149.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 143.
+ mdframed uses option nobreak mdframed on input line 149.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 143.
+ mdframed uses option nobreak mdframed on input line 149.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 143.
+(Font)              scaled to size 5.69998pt on input line 149.
 <frog.png, id=74, 200.75pt x 198.7425pt>
 File: frog.png Graphic file (type png)
 <use frog.png>
-Package pdftex.def Info: frog.png used on input line 163.
+Package pdftex.def Info: frog.png used on input line 172.
 (pdftex.def)             Requested size: 200.7495pt x 198.742pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 165.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 174.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 165.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 179.
+(Font)              scaled to size 6.64998pt on input line 174.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 189.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1820,7 +1820,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+bch on input line 194.
+LaTeX Font Info:    Try loading font information for T1+bch on input line 205.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-bch.cfg
@@ -1830,27 +1830,27 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 
 ]
-Underfull \hbox (badness 1394) in paragraph at lines 194--198
+Underfull \hbox (badness 1394) in paragraph at lines 205--209
 \T1/lmr/m/n/9 (+20) are to use the \T1/lmtt/m/n/9 \begin{figure*}...\end{figure
 *} \T1/lmr/m/n/9 (+20) en-vi-
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 194--198
+Underfull \hbox (badness 2443) in paragraph at lines 205--209
 \T1/lmr/m/n/9 (+20) ron-ment men-tioned above for fig-ures, or to use the
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 229.
+(Font)              scaled to size 7.59998pt on input line 242.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 229.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 242.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 229.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 242.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 7.59998pt on input line 229.
+(Font)              scaled to size 7.59998pt on input line 242.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 230.
+(hyperref)                be the same. Added a new anchor on input line 243.
 
 Extra height:0.0pt when 548.54987pt
 (2)Left:548.54987pt Right:547.10829pt Output:548.54987pt
@@ -1865,16 +1865,16 @@ See the caption package documentation for explanation.
 
 AED: lastpage setting LastPage
 - LAST -
-Extra skip:36.0pt
-Left:63.0pt/2.0pt
-Right:27.0pt/2.0pt
-Output:63.0pt
+Extra skip:18.0pt
+Left:54.0pt/2.0pt
+Right:36.0pt/2.0pt
+Output:54.0pt
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 315.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 335.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 315.
+(Font)              scaled to size 6.64998pt on input line 335.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 315.
+(Font)              <8> on input line 335.
 [2 <./frog.png>]
 
 Package catoptions Warning: Undefined options 
@@ -1882,19 +1882,19 @@ Package catoptions Warning: Undefined options
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 315.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 335.
 (./Untitled.xwm) (./Untitled.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
 Package rerunfilecheck Info: File `Untitled.out' has not changed.
 (rerunfilecheck)             Checksum: 9777ADE6890C2852B44B6B8C93D0099E;1272.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
  ) 
 Here is how much of TeX's memory you used:
- 35725 strings out of 492995
- 666211 string characters out of 6132704
- 809459 words of memory out of 5000000
+ 35744 strings out of 492995
+ 666487 string characters out of 6132704
+ 810459 words of memory out of 5000000
  38516 multiletter control sequences out of 15000+600000
  94853 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1915,10 +1915,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Untitled.pdf (2 pages, 332620 bytes).
+Output written on Untitled.pdf (2 pages, 333320 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 11 named destinations out of 1000 (max. 500000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
  41138 words of extra memory for PDF output out of 42996 (max. 10000000)
 
