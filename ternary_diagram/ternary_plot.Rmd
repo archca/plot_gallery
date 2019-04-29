@@ -3,7 +3,7 @@ title: "Tenary Plot"
 author: "Mirco Brunner"
 text & data: "Baxter & Cool 2016. http://www.barbicanra.co.uk/simple-r.html"
 bibliography: library.bib
-affiliation: "Johanna Mestorf Akademie / Institut für Ur- und Frühgeschichte, Christian-Albrechts Universität zu Kiel"
+affiliation: "IAW, Unibern"
 email: "mirco.brunner@iaw.unibe.ch"
 name: "Mirco Brunner"
 date: "FS 2019"
@@ -110,4 +110,4 @@ If your happy with the plot save it!
 ggsave("fig2.png", dpi = 300)
 ```
 
-###References
+### References
