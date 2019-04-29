@@ -9,13 +9,12 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.width=12, fig.height=8)
-```
+
 
 ## Data Preparation
 
-```{r}
+
+```r
 muensingen <- read.csv("muensingen_typochrono_bern_2018.csv", row.names = 1)
 muensingen_data <- muensingen[1:35]
 muensingen_phases <- muensingen[36]
@@ -26,8 +25,24 @@ muensingen_phases <- muensingen[36]
 
 ### by CA
 
-```{r}
+
+```r
 library(vegan)
+```
+
+```
+## Loading required package: permute
+```
+
+```
+## Loading required package: lattice
+```
+
+```
+## This is vegan 2.5-4
+```
+
+```r
 ca_result <- cca(as.matrix(muensingen_data))
 order_sites <- order(scores(ca_result,1,"sites"))
 order_species <- order(scores(ca_result, 1, "species"))
@@ -36,7 +51,8 @@ ca_ordered_matrix <- as.matrix(muensingen_data[order_sites,order_species])
 
 ### by Reciprocal Averaging
 
-```{r}
+
+```r
 untidy <- TRUE
 max_it <- 1000
 counter <- 0
@@ -58,39 +74,71 @@ ra_ordered_matrix <- rva
 
 #### Seriation Plot, Counts
 
-```{r}
-library(tabula)
 
+```r
+library(tabula)
+```
+
+```
+## 
+## Attaching package: 'tabula'
+```
+
+```
+## The following object is masked from 'package:vegan':
+## 
+##     diversity
+```
+
+```
+## The following object is masked from 'package:permute':
+## 
+##     permute
+```
+
+```r
 incidence_ca <- CountMatrix(data = ca_ordered_matrix, nrow = nrow(ca_ordered_matrix),
                             dimnames = dimnames(ca_ordered_matrix))
 
 plotMatrix(incidence_ca)
 ```
 
+![](index_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+
 #### Seriation Plot, Dots
 
-```{r}
+
+```r
 plotSpot(incidence_ca)
 ```
+
+![](index_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 
 #### Seriation Plot, Incidents
 
-```{r}
+
+```r
 plotMatrix(as(incidence_ca, "IncidenceMatrix"))+
   ggplot2::scale_fill_manual(values = c("TRUE" = "black", "FALSE" = "white"))
 ```
 
+![](index_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+
 #### Battleship Bar Plot
 
-```{r}
+
+```r
 plotBar(incidence_ca)
 ```
+
+![](index_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 
 #### Battleship Violin Plot
 
-```{r}
+
+```r
 library(reshape2)
 library(ggplot2)
 frequency_ca <- as(incidence_ca, "FrequencyMatrix")
@@ -107,4 +155,6 @@ ggplot(frequency_ca_melted, aes(x=variable, y=position, fill=variable)) +
   geom_jitter(height = 0, width = 0.1) +
   theme(legend.position="none", axis.text.x = element_text(angle = 90, hjust = 1))
 ```
+
+![](index_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
