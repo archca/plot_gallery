@@ -31,6 +31,10 @@ library(vegan)
 ```
 
 ```
+## Warning: package 'vegan' was built under R version 3.5.2
+```
+
+```
 ## Loading required package: permute
 ```
 
@@ -77,6 +81,10 @@ ra_ordered_matrix <- rva
 
 ```r
 library(tabula)
+```
+
+```
+## Warning: package 'tabula' was built under R version 3.5.2
 ```
 
 ```
@@ -141,6 +149,13 @@ plotBar(incidence_ca)
 ```r
 library(reshape2)
 library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.5.2
+```
+
+```r
 frequency_ca <- as(incidence_ca, "FrequencyMatrix")
 
 frequency_ca_melted <- melt(
