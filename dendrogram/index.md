@@ -31,6 +31,10 @@ library(vegan)
 ```
 
 ```
+## Warning: package 'vegan' was built under R version 3.5.2
+```
+
+```
 ## Loading required package: permute
 ```
 
@@ -39,7 +43,7 @@ library(vegan)
 ```
 
 ```
-## This is vegan 2.5-5
+## This is vegan 2.5-4
 ```
 
 ```r
@@ -76,11 +80,7 @@ library(ggraph)
 ```
 
 ```
-## Registered S3 methods overwritten by 'ggplot2':
-##   method         from 
-##   [.quosures     rlang
-##   c.quosures     rlang
-##   print.quosures rlang
+## Warning: package 'ggplot2' was built under R version 3.5.2
 ```
 
 ```r
