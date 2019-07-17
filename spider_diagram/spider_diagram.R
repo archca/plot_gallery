@@ -32,3 +32,19 @@ ggradar(plotdata,
         legend.text.size= 10) +
   labs(title = "Mammals, size, and sleep")
 
+
+
+
+
+# Example from https://github.com/ricardo-bion/ggradar
+library(ggplot2)
+library(ggradar)
+suppressPackageStartupMessages(library(dplyr))
+library(scales)
+
+mtcars %>%
+  add_rownames( var = "group" ) %>%
+  mutate_each(funs(rescale), -group) %>%
+  tail(4) %>% select(1:10) -> mtcars_radar
+
+ggradar(mtcars_radar) 
